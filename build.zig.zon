@@ -1,0 +1,12 @@
+.{
+    .name = .storage_ui,
+    .version = "0.1.0",
+    .fingerprint = 0xc403fa702e24af64,
+    .minimum_zig_version = "0.17.1",
+    .dependencies = .{
+        .zircon_editor = .{ .path = "../zigpui/packages/zircon_editor" },
+        .zircon_text = .{ .path = "../zigpui/packages/zircon_text" },
+        .zircon_ui = .{ .path = "../zigpui/packages/zircon_ui" },
+    },
+    .paths = .{ "build.zig", "build.zig.zon", "src", "resources", "tools", "docs", "README.md" },
+}
