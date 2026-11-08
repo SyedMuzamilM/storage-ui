@@ -26,6 +26,6 @@ The native journey verifies the AppKit drop adapter, the multi-file queue, comma
 
 ## Verified against Cloudflare R2
 
-On 2026-11-08, the live check passed against the configured `assets` bucket. It verified two queued uploads including a Unicode key and a 256 KiB binary, upload progress counters, exact download contents, remote/local collision protection, text preview, signed GET and PUT requests, copy, rename, nested downloads, and recursive deletion. All test objects were removed afterward.
+On 2026-11-08, the live check passed against a configured test bucket. It verified two queued uploads including a Unicode key and a 256 KiB binary, upload progress counters, exact download contents, remote/local collision protection, text preview, signed GET and PUT requests, copy, rename, nested downloads, and recursive deletion. All test objects were removed afterward.
 
 The local suite also checks canonical header ordering, including the copy-source conditional header pair that older curl signing implementations sort incorrectly. Request and URL signing run in Zig; curl supplies HTTP transport.
